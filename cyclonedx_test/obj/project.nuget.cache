@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "ANNrONwecMfI3QE0RXpORlQhkFINhL4XYCEu93bPbqznd0CDS828F4z3eldiqtmyxhfXsB86u1PbKxnd0ZOlgg==",
+  "success": true,
+  "projectFilePath": "C:\\git\\cyclonedx_giturl\\cyclonedx_test\\cyclonedx_test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\john\\.nuget\\packages\\kveer.xmlrpc\\1.3.1\\kveer.xmlrpc.1.3.1.nupkg.sha512",
+    "C:\\Users\\john\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\john\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\john\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\john\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\john\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\john\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
+    "C:\\Users\\john\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\john\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\john\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\john\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
