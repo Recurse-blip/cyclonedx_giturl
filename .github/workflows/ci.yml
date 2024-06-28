@@ -1,0 +1,43 @@
+name: CycloneDX .NET
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  cyclonedx:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8'
+
+    - name: Install CycloneDX CLI
+      run: dotnet tool install --global CycloneDX
+
+    - name: Restore dependencies
+      run: dotnet restore
+      working-directory: cyclonedx_test
+
+    - name: Build the project
+      run: dotnet build --no-restore
+      working-directory: cyclonedx_test
+
+    - name: Generate CycloneDX BOM
+      run: dotnet CycloneDX ./cyclonedx_test.sln -o bom.xml
+      working-directory: cyclonedx_test
+
+    - name: Upload BOM as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: bom
+        path: cyclonedx_test/bom.xml
